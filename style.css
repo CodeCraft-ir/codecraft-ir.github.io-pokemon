@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-grass{background-color:  #defce0;}
+.bg-water{background-color:  #dff3fe;}
+.bg-fire{background-color:  #fddddd;}
+.bg-bug{background-color:  #f9d5a3;}
+.bg-normal{background-color:  #94a3b8;}
+.bg-electric{background-color:  #a5f3fc;}
+.bg-psychic{background-color:  #fb923c;}
+.bg-rock{background-color:  #ca8a04;}
+.bg-ghost{background-color:  #ccfbf1;}
+.bg-fighting{background-color:  #ef4444;}
+.bg-ground{background-color:  #facc15;}
+.bg-fairy{background-color:  #f472b6;}
+.bg-poison{background-color:  #fda4af;}

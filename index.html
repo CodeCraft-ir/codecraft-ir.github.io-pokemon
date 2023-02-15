@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemons - 100Coders - 03</title>
+    <script type="module" src="./scripts.js" defer></script>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <div class="container mx-auto py-10 text-center">
+      <h1 class="font-serif text-3xl font-extrabold mb-8 mt-28">Pokemons!</h1>
+      <input type="text" name="name" class="search inline border-b-4 border-indigo-500 px-14 mb-10 w-1/4 text-center" placeholder="Search Your Crash Pokemon :)" >
+      <span class="text-gray-500">in</span>
+      <select name="type" class="capitalize search " >
+        <option value="all" default>all</option>
+        <option value="grass">grass</option>
+        <option value="water">water</option>
+        <option value="fire">fire</option>
+        <option value="bug">bug</option>
+        <option value="normal">normal</option>
+        <option value="electric">electric</option>
+        <option value="psychic">psychic</option>
+        <option value="rock">rock</option>
+        <option value="ghost">ghost</option>
+        <option value="fighting">fighting</option>
+        <option value="ground">ground</option>
+        <option value="fairy">fairy</option>
+        <option value="poison">poison</option>
+      </select>
+      <div id="pokemons" class="flex flex-wrap justify-center mx-auto">
+        Loading ...
+      </div>
+    </div>
+    <template id="pokemonCart-template">
+      <div class="w-1/2 lg:w-1/5 p-2">
+        <div class="pokemon h-[360px] flex flex-col justify-center rounded-lg">
+          <div
+            class="w-[140px] h-[140px] rounded-full overflow-hidden mx-auto bg-white flex items-center p-5"
+          >
+            <img class="thumbnail w-4/5 mx-auto" src="" alt="" />
+          </div>
+          <h3 class="title w-auto mx-auto my-3 font-semibold"></h3>
+          <span
+            class="type w-auto mx-auto bg-white px-5 pb-2 pt-1 rounded-lg text-sm"
+          ></span>
+        </div>
+      </div>
+    </template>
+    <div id="pokemonCart-template" class="hidden">
+      <div class="w-1/2 lg:w-1/5 p-2">
+        <div class="pokemon h-[360px] flex flex-col justify-center rounded-lg">
+          <div
+            class="w-[140px] h-[140px] rounded-full overflow-hidden mx-auto bg-white p-5"
+          >
+            <img class="thumbnail w-4/5 mx-auto" src="" alt="" />
+          </div>
+          <h3 class="title w-auto mx-auto my-3 font-semibold"></h3>
+          <span
+            class="type w-auto mx-auto bg-white px-5 pb-2 pt-1 rounded-lg text-sm"
+          ></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
